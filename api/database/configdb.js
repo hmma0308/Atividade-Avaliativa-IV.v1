@@ -5,11 +5,11 @@ const connect = async () => {
         mongoose.set("strictQuery", true);
         await mongoose.connect(
             process.env.MONGO_DB_HOST,
-            { dbName: 'test_db' }
+            { dbName: process.env.MONGO_DB_NAME }
         );
         console.log("Banco conectado com sucesso!");
     } catch (error) {
-        console.log(error)
+        console.error("MongoDB connection error:", error);
     }
 };
 
