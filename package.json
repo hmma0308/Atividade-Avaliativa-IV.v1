@@ -2,10 +2,11 @@
   "name": "atividade-avaliativa-iv.v1",
   "version": "0.0.1",
   "description": "",
-  "main": "src/index.js",
+  "main": "api/index.js",
   "type": "module",
   "scripts": {
-    "start:app": "nodemon src/index.js"
+    "start:app": "nodemon src/index.js",
+    "start:database": "docker compose up -d"
   },
   "author": "",
   "devDependencies": {
