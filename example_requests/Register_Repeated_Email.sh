@@ -1,8 +1,9 @@
+# rodar duas vezes
 curl --request POST \
-  --url http://localhost:3000/register \
+  --url http://localhost:3000/users/register \
   --header 'Content-Type: application/json' \
   --data '{
-    "username": "testuser2",
-    "password": "validPassword123",
-    "email": "test@example.com"
+    "username": "differentuser",
+    "password": "ValidPass123",
+    "email": "existing@example.com"
 }'
